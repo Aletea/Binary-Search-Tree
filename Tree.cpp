@@ -77,7 +77,7 @@ void Tree::remove(int remNode) {
   }
   //or go to the left and then the right to get the next node
   else if (currentNode->left != NULL) {
-    replaceNode = currentNode->right;
+    replaceNode = currentNode->left;
     while (replaceNode->right != NULL) {
       replaceNode = replaceNode->right;
     }
